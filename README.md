@@ -15,7 +15,7 @@
 
 
 ## Available Routes
-###book routes
+### Book Routes
 
 ##### ${serverName}/api/v1/books
 ##### ${serverName}/api/v1/books/{bookId}
