@@ -5,3 +5,10 @@
 * [Spring security](#jwt authentication)
 * [JPA](#data handling)
 * [mysql](#jdbc mysqldriver)
+
+
+#Technologies
+
+
+
+#Setup
