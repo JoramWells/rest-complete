@@ -17,7 +17,7 @@
 ## Available Routes
 ### Book Routes
 
-##### ${serverName}/api/v1/books
-##### ${serverName}/api/v1/books/{bookId}
-##### ${serverName}/api/v1/books/delete/{bookId}
-##### ${serverName}/api/v1/books/update/{bookId}
+* ${serverName}/api/v1/books
+* ${serverName}/api/v1/books/{bookId}
+* ${serverName}/api/v1/books/delete/{bookId}
+* ${serverName}/api/v1/books/update/{bookId}
