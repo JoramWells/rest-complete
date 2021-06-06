@@ -21,7 +21,32 @@
 ##### Add a collection of books
 
 * &{serverName}/api/v1/addBooks
-   * return "Successfully Added a books"
+   *[
+       {
+         "bookName":"River between",
+         "isbn":"12345",
+       },
+      {
+       "bookName":"River between",
+       "isbn":"12345",
+     }
+   ]
+   
+   * response "Successfully Added a books"
+
+##### Add a single book
+* &{serverName}/api/v1/addBook
+    *[
+       {
+         "bookName":"River between",
+         "isbn":"12345",
+       }
+    ]
+    
+* response "Successfully Added a books"
+    
+
+
 
 #### READ
 * ${serverName}/api/v1/books
