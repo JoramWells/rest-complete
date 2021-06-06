@@ -21,7 +21,7 @@
 ##### Add a collection of books
 
 * &{serverName}/api/v1/addBooks
-   *[
+   * [
        {
          "bookName":"River between",
          "isbn":"12345",
@@ -36,7 +36,7 @@
 
 ##### Add a single book
 * &{serverName}/api/v1/addBook
-    *[
+    * [
        {
          "bookName":"River between",
          "isbn":"12345",
