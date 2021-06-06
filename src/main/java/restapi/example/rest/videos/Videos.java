@@ -1,8 +1,17 @@
 package restapi.example.rest.videos;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.util.Date;
 
+@Entity
+@Table
 public class Videos {
+
+    @Id
+    @GeneratedValue
     private int id;
     private String videoName;
     private int views;
