@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 public class BookController {
@@ -18,6 +19,12 @@ public class BookController {
     @GetMapping("/books")
     public List<Book> getBooks(){
         return  bookService.getBooks();
+    }
+    
+//    Get a book
+    @GetMapping("/book/{id}")
+    public Optional<Book> getBook(@PathVariable int id){
+        return bookService.getBook(id);
     }
 
 //    Add book
