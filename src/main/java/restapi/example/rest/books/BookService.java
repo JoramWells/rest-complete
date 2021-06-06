@@ -24,4 +24,15 @@ public class BookService {
         bookRepository.save(book);
 
     }
+
+//    Delete a book
+    public void deleteBook(int id) {
+        boolean exists = bookRepository.existsById(id);
+        if(!exists){
+            throw new IllegalStateException(
+                    "Book with " + id + " does not exist"
+            );
+        }
+        bookRepository.deleteById(id);
+    }
 }
