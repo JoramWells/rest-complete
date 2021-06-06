@@ -7,6 +7,8 @@ import javax.persistence.*;
 
 public class User {
     @Id
+    private  int id;
+
     @SequenceGenerator(
             name = "user_name",
             sequenceName = "user_sequence",
@@ -16,7 +18,6 @@ public class User {
             strategy = GenerationType.SEQUENCE,
             generator = "user_sequence"
     )
-    private  int id;
     private String firstName;
     private String secondName;
     private String email;

@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@RequestMapping("")
 public class UserController {
 
     private final UserService userService;
@@ -15,12 +16,14 @@ public class UserController {
         this.userService = userService;
     }
 
-    @GetMapping("/user")
+//    Get all users
+    @GetMapping("/users")
     public List<User> getUsers(){
         return userService.getUsers();
     }
 
-    @PostMapping
+//    Register all users
+    @PostMapping("/register")
     public void registerNewUser(@RequestBody User user){
         userService.addUser(user);
     }

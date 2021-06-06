@@ -18,8 +18,10 @@ public class UserService {
     public List<User> getUsers(){
         return userRepository.findAll();
     }
+//    Register new user
 
     public void addUser(User user) {
         userRepository.save(user);
+        System.out.println(user);
     }
 }
