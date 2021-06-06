@@ -1,6 +1,21 @@
 package restapi.example.rest.user;
 
+import javax.persistence.*;
+
+@Entity
+@Table
+
 public class User {
+    @Id
+    @SequenceGenerator(
+            name = "user_name",
+            sequenceName = "user_sequence",
+            allocationSize = 1
+    )
+    @GeneratedValue(
+            strategy = GenerationType.SEQUENCE,
+            generator = "user_sequence"
+    )
     private  int id;
     private String firstName;
     private String secondName;
