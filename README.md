@@ -17,9 +17,22 @@
 ## Available Routes
 ### Book Routes
 
-* ${serverName}/api/v1/books - getAllBooks();
-    * jsonResponse [{}]
+#### CREATE
+##### Add a collection of books
 
-* ${serverName}/api/v1/books/{bookId}
-* ${serverName}/api/v1/books/delete/{bookId}
+* &{serverName}/api/v1/addBooks - *addNewBook()
+   * return "Successfully Added a books"
+
+#### READ
+* ${serverName}/api/v1/books - *getAllBooks( );
+    * jsonResponse [{ }]
+* ${serverName}/api/v1/book/{bookId} - *getBook( )
+     * array [ ] 
+
+#### DELETE
+* ${serverName}/api/v1/delete/{bookId} - deleteBook( )
+      * return ("Succesfilly deleted book with" + bookId);
+
+
+#### UPDATE
 * ${serverName}/api/v1/books/update/{bookId}
