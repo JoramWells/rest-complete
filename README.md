@@ -20,17 +20,17 @@
 #### CREATE
 ##### Add a collection of books
 
-* &{serverName}/api/v1/addBooks - *addNewBook()
+* &{serverName}/api/v1/addBooks
    * return "Successfully Added a books"
 
 #### READ
-* ${serverName}/api/v1/books - *getAllBooks( );
+* ${serverName}/api/v1/books
     * jsonResponse [{ }]
-* ${serverName}/api/v1/book/{bookId} - *getBook( )
+* ${serverName}/api/v1/book/{bookId}
      * array [ ] 
 
 #### DELETE
-* ${serverName}/api/v1/delete/{bookId} - deleteBook( )
+* ${serverName}/api/v1/delete/{bookId}
       * return ("Succesfilly deleted book with" + bookId);
 
 
