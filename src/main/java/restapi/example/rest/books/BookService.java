@@ -25,8 +25,20 @@ public class BookService {
         bookRepository.save(book);
 
     }
+//    Get a book by id
+    public Optional<Book> getBook(int id) {
+        return bookRepository.findById(id);
+    }
 
-//    Delete a book
+//    Get a book by name
+
+    public Optional<Book> getBookByName(String book) {
+         Optional<Book> bookF = bookRepository.findBookByName(book);
+         System.out.println(bookF);
+        return bookRepository.findBookByName(book);
+    }
+
+    //    Delete a book
     public void deleteBook(int id) {
         boolean exists = bookRepository.existsById(id);
         if(!exists){
@@ -37,7 +49,5 @@ public class BookService {
         bookRepository.deleteById(id);
     }
 
-    public Optional<Book> getBook(int id) {
-        return bookRepository.findById(id);
-    }
+
 }
